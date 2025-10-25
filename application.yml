@@ -1,1 +1,12 @@
 global:
+  message: Welcome  to global microservices!
+logging:
+  level:
+    root: INFO
+management:
+  endpoints:
+    web:
+      exposer: health, info, refresh
+  endpoint:
+    health:
+      show-details: always
